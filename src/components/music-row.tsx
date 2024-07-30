@@ -1,4 +1,5 @@
-import { Ellipsis, Heart, Play } from 'lucide-react'
+import { Ellipsis, Play } from 'lucide-react'
+import { Heart } from 'iconsax-react'
 import Image from 'next/image'
 
 export interface Music {

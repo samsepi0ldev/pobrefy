@@ -1,8 +1,6 @@
-import { Plus } from 'lucide-react'
 import { z } from 'zod'
 
-import { Button } from '@/components/button'
-import { DialogContent, DialogTitle, DialogTrigger } from '@/components/dialog'
+import { DialogContent, DialogTitle } from '@/components/dialog'
 import { SaveButtonPlaylist } from './save-button-playlist'
 
 const createPlaylistSchema = z.object({

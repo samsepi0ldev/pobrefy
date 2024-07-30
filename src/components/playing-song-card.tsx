@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react'
+import { Heart } from 'iconsax-react'
 import Image from 'next/image'
 
 export function PlayingSongCard () {

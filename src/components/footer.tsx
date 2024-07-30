@@ -1,8 +1,10 @@
 'use client'
 
-import { Download, Shuffle, SkipBack, Play, SkipForward, Repeat, ListPlus, Volume2, Menu, RefreshCcw, SquareArrowOutUpRight } from 'lucide-react'
+// import { Download, Shuffle, SkipBack, Play, SkipForward, Repeat, ListPlus, Volume2, Menu, RefreshCcw, SquareArrowOutUpRight } from 'lucide-react'
+import { Download, ListPlus, SquareArrowOutUpRight } from 'lucide-react'
 import { useState } from 'react'
 import NextLink from 'next/link'
+import { Play, Pause, Shuffle, Repeat, Next, Previous, VolumeHigh, Refresh, HambergerMenu } from 'iconsax-react'
 
 import { PlayingSongCard } from '@/components/playing-song-card'
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from '@/components/tooltip'
@@ -10,7 +12,6 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/popover'
 import { Link } from './link'
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from './dialog'
 import { Button } from './button'
-import { DialogCreatePlaylist } from '@/app/(app)/playlists/dialog-create-playlist'
 
 export function Footer () {
   const [shuffle, setShuffle] = useState(false)
@@ -55,7 +56,7 @@ export function Footer () {
             <Tooltip>
               <TooltipTrigger asChild>
                 <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
-                  <SkipBack className='size-4' />
+                  <Previous variant='Bold' className='size-4' />
                 </button>
               </TooltipTrigger>
               <TooltipContent sideOffset={8}>
@@ -66,7 +67,7 @@ export function Footer () {
             <Tooltip>
               <TooltipTrigger asChild>
                 <button className='size-9 rounded-full bg-white flex items-center justify-center transition-colors'>
-                  <Play className='size-6 text-zinc-950' />
+                  <Play variant='Bold' className='size-6 text-zinc-950' />
                 </button>
               </TooltipTrigger>
               <TooltipContent sideOffset={8}>
@@ -77,7 +78,7 @@ export function Footer () {
             <Tooltip>
               <TooltipTrigger asChild>
                 <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
-                  <SkipForward className='size-4' />
+                  <Next variant='Bold' className='size-4' />
                 </button>
               </TooltipTrigger>
               <TooltipContent sideOffset={8}>
@@ -118,7 +119,7 @@ export function Footer () {
               className='flex flex-col p-1.5'
             >
               <button className='flex items-center gap-2 text-xs hover:bg-zinc-900 px-2 py-1.5 rounded transition-colors'>
-                <RefreshCcw className='size-4 flex-shrink-0' />
+                <Refresh className='size-4 flex-shrink-0' />
                 Atualizar titulo
               </button>
               <Dialog>
@@ -193,12 +194,12 @@ export function Footer () {
 
       <div className='flex items-center gap-x-2'>
         <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
-          <Volume2 />
+          <VolumeHigh />
         </button>
         <Popover>
           <PopoverTrigger asChild>
             <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
-              <Menu />
+              <HambergerMenu />
             </button>
           </PopoverTrigger>
           <PopoverContent className='flex flex-col p-1.5' align='end' sideOffset={28}>

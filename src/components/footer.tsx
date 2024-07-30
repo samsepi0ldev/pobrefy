@@ -27,7 +27,7 @@ export function Footer () {
             <Tooltip>
               <TooltipTrigger asChild>
                 <button
-                  className='size-11 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
+                  className='size-9 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
                   data-active={true}
                 >
                   <Download className='size-4' />
@@ -42,7 +42,7 @@ export function Footer () {
               <TooltipTrigger asChild>
                 <button
                   onClick={() => setShuffle(!shuffle)}
-                  className='size-11 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
+                  className='size-9 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
                   data-active={shuffle}
                 >
                   <Shuffle className='size-4' />
@@ -55,7 +55,7 @@ export function Footer () {
 
             <Tooltip>
               <TooltipTrigger asChild>
-                <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
+                <button className='size-9 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
                   <Previous variant='Bold' className='size-4' />
                 </button>
               </TooltipTrigger>
@@ -77,7 +77,7 @@ export function Footer () {
 
             <Tooltip>
               <TooltipTrigger asChild>
-                <button className='size-11 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
+                <button className='size-9 rounded-full hover:bg-zinc-800 flex items-center justify-center transition-colors'>
                   <Next variant='Bold' className='size-4' />
                 </button>
               </TooltipTrigger>
@@ -90,7 +90,7 @@ export function Footer () {
               <TooltipTrigger asChild>
                 <button
                   onClick={() => setRepeater(!repeater)}
-                  className='size-11 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
+                  className='size-9 rounded-full text-zinc-500 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-violet-500'
                   data-active={repeater}
                 >
                   <Repeat className='size-4' />
@@ -107,7 +107,7 @@ export function Footer () {
           <Popover>
             <PopoverTrigger asChild>
               <button
-                className='size-11 rounded-full text-zinc-50 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-white'
+                className='size-9 rounded-full text-zinc-50 hover:bg-zinc-800 flex items-center justify-center transition-colors data-[active=true]:text-white'
               >
                 <ListPlus className='size-4' />
               </button>
